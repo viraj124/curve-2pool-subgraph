@@ -1,0 +1,6 @@
+type Withdrawals @entity {
+  id: ID!
+  user: Bytes!
+  transferAmounts: [BigInt!]!
+  lpWithdrawTimestamps: [BigInt!]!
+}

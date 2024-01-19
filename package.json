@@ -1,0 +1,18 @@
+{
+  "name": "shell-protocol-v3-subgraphs",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ Good-Ghosting/GoodGhostingSept",
+    "create-local": "graph create --node http://localhost:8020/ Good-Ghosting/GoodGhostingSept",
+    "remove-local": "graph remove --node http://localhost:8020/ Good-Ghosting/GoodGhostingSept",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 Good-Ghosting/GoodGhostingSept"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.18.0",
+    "@graphprotocol/graph-ts": "0.18.0",
+    "global": "^4.4.0",
+    "graph": "^0.2.0"
+  }
+}
